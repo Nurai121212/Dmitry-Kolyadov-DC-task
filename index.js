@@ -8,7 +8,7 @@ const executeMethod = (obj, keys, method, params) => {
     targetKey = targetKey[keyArray[i]]
   }
 
-  return targetKey[`${method}`](...params)
+  return targetKey[method](...params)
 };
 
 module.exports = executeMethod;
